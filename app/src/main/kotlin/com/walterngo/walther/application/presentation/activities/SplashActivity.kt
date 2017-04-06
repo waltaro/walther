@@ -1,9 +1,9 @@
-package com.walterngo.walther.presentation.activities
+package com.walterngo.walther.application.presentation.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.walterngo.walther.R
-import com.walterngo.walther.presentation.presenters.SplashPresenter
+import com.walterngo.walther.application.presentation.presenters.SplashPresenter
 import org.jetbrains.anko.startActivity
 
 class SplashActivity : AppCompatActivity(), SplashPresenter.ViewSurface {

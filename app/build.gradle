@@ -28,6 +28,7 @@ android {
 
 ext {
     androidSupportVersion = '25.3.0'
+    daggerVersion = '2.10'
 }
 
 dependencies {
@@ -45,6 +46,10 @@ dependencies {
 
     // Anko
     compile 'org.jetbrains.anko:anko-appcompat-v7:0.10.0-beta-2'
+
+    // Dagger 2
+    compile "com.google.dagger:dagger:$daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
 
     // JUnit
     testCompile 'junit:junit:4.12'

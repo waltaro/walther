@@ -1,7 +1,0 @@
-package com.walterngo.walther.presentation.presenters
-
-/**
- * @author walterngo
- */
-class MainPresenter {
-}
