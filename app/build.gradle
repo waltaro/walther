@@ -49,10 +49,14 @@ dependencies {
 
     // Dagger 2
     compile "com.google.dagger:dagger:$daggerVersion"
-    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
 
     // JUnit
     testCompile 'junit:junit:4.12'
+}
+
+kapt {
+    generateStubs = true
 }
 
 repositories {
