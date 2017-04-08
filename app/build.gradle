@@ -31,6 +31,7 @@ ext {
     daggerVersion = '2.10'
     retrofitVersion = '2.2.0'
     okHttpVersion = '3.6.0'
+    ankoVersion = '0.10.0-beta-2'
 }
 
 configurations {
@@ -54,8 +55,8 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
     // Anko
-    compile 'org.jetbrains.anko:anko-appcompat-v7:0.10.0-beta-2'
-    compile 'org.jetbrains.anko:anko-support-v4:0.10.0-beta-2'
+    compile "org.jetbrains.anko:anko-appcompat-v7:$ankoVersion"
+    compile "org.jetbrains.anko:anko-support-v4:$ankoVersion"
 
     // Dagger 2
     compile "com.google.dagger:dagger:$daggerVersion"
