@@ -46,6 +46,7 @@ dependencies {
 
     // Anko
     compile 'org.jetbrains.anko:anko-appcompat-v7:0.10.0-beta-2'
+    compile 'org.jetbrains.anko:anko-support-v4:0.10.0-beta-2'
 
     // Dagger 2
     compile "com.google.dagger:dagger:$daggerVersion"
