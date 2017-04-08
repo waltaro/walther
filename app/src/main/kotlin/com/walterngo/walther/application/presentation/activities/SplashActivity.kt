@@ -2,7 +2,6 @@ package com.walterngo.walther.application.presentation.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.walterngo.walther.R
 import com.walterngo.walther.WaltherApplication
 import com.walterngo.walther.application.presentation.presenters.SplashPresenter
 import com.walterngo.walther.injection.components.DaggerActivityComponent
@@ -16,7 +15,6 @@ class SplashActivity : AppCompatActivity(), SplashPresenter.ViewSurface {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
         DaggerActivityComponent.builder()
                 .appComponent((application as WaltherApplication).getAppComponent())
                 .build()
