@@ -1,4 +1,4 @@
-package com.walterngo.walther.presentation.activities
+package com.walterngo.walther.application.presentation.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
