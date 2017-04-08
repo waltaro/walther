@@ -29,6 +29,15 @@ android {
 ext {
     androidSupportVersion = '25.3.0'
     daggerVersion = '2.10'
+    retrofitVersion = '2.2.0'
+    okHttpVersion = '3.6.0'
+}
+
+configurations {
+    // Provided by Simple XML
+    compile.exclude module: 'xpp3'
+    compile.exclude module: 'stax'
+    compile.exclude module: 'stax-api'
 }
 
 dependencies {
@@ -51,6 +60,18 @@ dependencies {
     // Dagger 2
     compile "com.google.dagger:dagger:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    // Retrofit
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    compile "com.squareup.retrofit2:converter-simplexml:$retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
+
+    // OkHttp
+    compile "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    compile "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    // SimpleXML
+    compile 'org.simpleframework:simple-xml:2.7.1'
 
     // JUnit
     testCompile 'junit:junit:4.12'
